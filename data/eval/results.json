@@ -1,0 +1,1419 @@
+{
+  "ranAt": "2026-10-28T07:26:50.317Z",
+  "model": "qwen3:4b",
+  "provider": "ollama",
+  "threshold": 0.6,
+  "cases": 17,
+  "pairs": 323,
+  "positives": 29,
+  "results": [
+    {
+      "name": "mentions-only",
+      "description": "Notify only agents named in the post.",
+      "tp": 5,
+      "fp": 0,
+      "fn": 24,
+      "tn": 294,
+      "precision": 1,
+      "recall": 0.1724137931034483,
+      "f1": 0.29411764705882354,
+      "seconds": 0.002,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "zomato"
+          ]
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "zomato"
+          ]
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [],
+          "fn": [
+            "yulu"
+          ]
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "blinkit",
+            "flipkart",
+            "phonepe",
+            "zepto"
+          ]
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "cred",
+            "paytm"
+          ]
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "makemytrip"
+          ]
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "makemytrip"
+          ]
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "makemytrip",
+            "swiggy"
+          ]
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "airtel"
+          ]
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "ola"
+          ]
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "blinkit",
+            "phonepe",
+            "swiggy",
+            "zepto"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "flipkart"
+          ]
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto"
+          ],
+          "fp": [],
+          "fn": [
+            "bounce",
+            "zomato"
+          ]
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "paytm"
+          ]
+        }
+      ]
+    },
+    {
+      "name": "graph-only",
+      "description": "Notify every 1-hop relationship neighbour of the author.",
+      "tp": 26,
+      "fp": 33,
+      "fn": 3,
+      "tn": 261,
+      "precision": 0.4406779661016949,
+      "recall": 0.896551724137931,
+      "f1": 0.5909090909090909,
+      "seconds": 0.001,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc",
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "phonepe",
+            "zepto",
+            "zomato"
+          ],
+          "fp": [
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "phonepe",
+            "zepto"
+          ],
+          "fn": []
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "irctc",
+            "phonepe",
+            "zepto",
+            "zomato"
+          ],
+          "fp": [
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "irctc",
+            "phonepe",
+            "zepto"
+          ],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce",
+            "blinkit",
+            "flipkart",
+            "irctc",
+            "phonepe",
+            "zepto",
+            "zomato"
+          ],
+          "fp": [
+            "blinkit",
+            "flipkart",
+            "irctc",
+            "phonepe",
+            "zepto",
+            "zomato"
+          ],
+          "fn": [
+            "yulu"
+          ]
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "irctc",
+            "phonepe",
+            "zepto",
+            "zomato"
+          ],
+          "fp": [
+            "bounce",
+            "irctc",
+            "zomato"
+          ],
+          "fn": []
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [
+            "cred",
+            "paytm",
+            "swiggy"
+          ],
+          "fp": [
+            "swiggy"
+          ],
+          "fn": []
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "makemytrip",
+            "swiggy",
+            "zomato"
+          ],
+          "fp": [
+            "swiggy",
+            "zomato"
+          ],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc",
+            "blinkit",
+            "makemytrip",
+            "swiggy",
+            "yulu"
+          ],
+          "fp": [
+            "blinkit",
+            "yulu"
+          ],
+          "fn": []
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [
+            "airtel"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "ola"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [
+            "bounce"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "meesho",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "meesho"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato",
+            "flipkart",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "flipkart",
+            "swiggy",
+            "zepto"
+          ],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [
+            "flipkart"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [
+            "airtel",
+            "phonepe",
+            "razorpay"
+          ],
+          "fp": [
+            "airtel",
+            "phonepe",
+            "razorpay"
+          ],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto",
+            "bounce",
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "paytm"
+          ],
+          "fp": [],
+          "fn": []
+        }
+      ]
+    },
+    {
+      "name": "topic-only",
+      "description": "Notify every agent whose interests overlap the post topics.",
+      "tp": 29,
+      "fp": 34,
+      "fn": 0,
+      "tn": 260,
+      "precision": 0.4603174603174603,
+      "recall": 1,
+      "f1": 0.6304347826086957,
+      "seconds": 0,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc",
+            "makemytrip",
+            "zomato"
+          ],
+          "fp": [
+            "makemytrip"
+          ],
+          "fn": []
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce",
+            "ather",
+            "blinkit",
+            "flipkart",
+            "meesho",
+            "ola",
+            "rapido",
+            "yulu",
+            "zepto",
+            "zomato"
+          ],
+          "fp": [
+            "ather",
+            "blinkit",
+            "flipkart",
+            "meesho",
+            "ola",
+            "rapido",
+            "zepto",
+            "zomato"
+          ],
+          "fn": []
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "flipkart",
+            "phonepe",
+            "zepto"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [
+            "airtel",
+            "cred",
+            "paytm",
+            "razorpay"
+          ],
+          "fp": [
+            "airtel",
+            "razorpay"
+          ],
+          "fn": []
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "indigo",
+            "makemytrip"
+          ],
+          "fp": [
+            "indigo"
+          ],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "irctc",
+            "makemytrip"
+          ],
+          "fp": [
+            "irctc"
+          ],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc",
+            "makemytrip",
+            "swiggy"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [
+            "airtel"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "indigo",
+            "makemytrip",
+            "ola"
+          ],
+          "fp": [
+            "indigo",
+            "makemytrip"
+          ],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce",
+            "ola",
+            "rapido",
+            "yulu"
+          ],
+          "fp": [
+            "bounce",
+            "ola",
+            "rapido",
+            "yulu"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "meesho",
+            "phonepe",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "meesho"
+          ],
+          "fn": []
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato",
+            "airtel",
+            "cred",
+            "paytm",
+            "phonepe",
+            "razorpay"
+          ],
+          "fp": [
+            "airtel",
+            "paytm",
+            "phonepe",
+            "razorpay"
+          ],
+          "fn": []
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [
+            "flipkart"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto",
+            "ather",
+            "blinkit",
+            "bounce",
+            "flipkart",
+            "meesho",
+            "ola",
+            "rapido",
+            "swiggy",
+            "zomato"
+          ],
+          "fp": [
+            "ather",
+            "blinkit",
+            "flipkart",
+            "meesho",
+            "ola",
+            "rapido",
+            "swiggy"
+          ],
+          "fn": []
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "airtel",
+            "cred",
+            "paytm",
+            "phonepe"
+          ],
+          "fp": [
+            "airtel",
+            "cred",
+            "phonepe"
+          ],
+          "fn": []
+        }
+      ]
+    },
+    {
+      "name": "hybrid-rules",
+      "description": "Candidates (mentions, graph, topics) scored by the deterministic rules prior. Production default.",
+      "tp": 27,
+      "fp": 6,
+      "fn": 2,
+      "tn": 288,
+      "precision": 0.8181818181818182,
+      "recall": 0.9310344827586207,
+      "f1": 0.8709677419354839,
+      "seconds": 0.01,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc",
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce",
+            "blinkit",
+            "zepto",
+            "zomato",
+            "flipkart",
+            "yulu"
+          ],
+          "fp": [
+            "blinkit",
+            "flipkart",
+            "zepto",
+            "zomato"
+          ],
+          "fn": []
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "zepto",
+            "flipkart",
+            "phonepe"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [
+            "cred",
+            "paytm"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc",
+            "swiggy",
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [
+            "airtel"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "ola"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [
+            "bounce"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "meesho",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "meesho"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [
+            "flipkart"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto",
+            "bounce",
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "paytm"
+          ],
+          "fp": [],
+          "fn": []
+        }
+      ]
+    },
+    {
+      "name": "hybrid-llm",
+      "description": "Candidates (mentions, graph, topics) judged by qwen3:4b alone.",
+      "tp": 16,
+      "fp": 9,
+      "fn": 13,
+      "tn": 285,
+      "precision": 0.64,
+      "recall": 0.5517241379310345,
+      "f1": 0.5925925925925927,
+      "seconds": 135.421,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "zomato"
+          ]
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "zomato",
+            "blinkit",
+            "zepto"
+          ],
+          "fp": [
+            "blinkit",
+            "zepto"
+          ],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [],
+          "fn": [
+            "yulu"
+          ]
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "zepto",
+            "flipkart",
+            "zomato"
+          ],
+          "fp": [
+            "zomato"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [
+            "swiggy"
+          ],
+          "fp": [
+            "swiggy"
+          ],
+          "fn": [
+            "cred",
+            "paytm"
+          ]
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "makemytrip",
+            "swiggy"
+          ],
+          "fp": [
+            "swiggy"
+          ],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "makemytrip",
+            "swiggy"
+          ]
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "airtel"
+          ]
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "ola"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce",
+            "yulu"
+          ],
+          "fp": [
+            "bounce",
+            "yulu"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "meesho",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "meesho"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "flipkart"
+          ]
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto"
+          ],
+          "fp": [],
+          "fn": [
+            "bounce",
+            "zomato"
+          ]
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "paytm",
+            "phonepe"
+          ],
+          "fp": [
+            "phonepe"
+          ],
+          "fn": []
+        }
+      ]
+    },
+    {
+      "name": "hybrid-blend",
+      "description": "Candidates scored 50/50 by the rules prior and qwen3:4b.",
+      "tp": 16,
+      "fp": 3,
+      "fn": 13,
+      "tn": 291,
+      "precision": 0.8421052631578947,
+      "recall": 0.5517241379310345,
+      "f1": 0.6666666666666666,
+      "seconds": 135.421,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "zomato"
+          ]
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [],
+          "fn": [
+            "yulu"
+          ]
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "zepto",
+            "flipkart"
+          ],
+          "fp": [],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "cred",
+            "paytm"
+          ]
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "makemytrip",
+            "swiggy"
+          ]
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "airtel"
+          ]
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "ola"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce",
+            "yulu"
+          ],
+          "fp": [
+            "bounce",
+            "yulu"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "meesho",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "meesho"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [],
+          "fp": [],
+          "fn": [
+            "flipkart"
+          ]
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto"
+          ],
+          "fp": [],
+          "fn": [
+            "bounce",
+            "zomato"
+          ]
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "paytm"
+          ],
+          "fp": [],
+          "fn": []
+        }
+      ]
+    },
+    {
+      "name": "llm-all",
+      "description": "Every agent judged by qwen3:4b, no candidate stage.",
+      "tp": 19,
+      "fp": 14,
+      "fn": 10,
+      "tn": 280,
+      "precision": 0.5757575757575758,
+      "recall": 0.6551724137931034,
+      "f1": 0.6129032258064515,
+      "seconds": 561.246,
+      "errors": [],
+      "perCase": [
+        {
+          "id": "swiggy-seat-delivery",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "zomato"
+          ]
+        },
+        {
+          "id": "swiggy-fee-cut",
+          "predicted": [
+            "zomato",
+            "blinkit",
+            "zepto"
+          ],
+          "fp": [
+            "blinkit",
+            "zepto"
+          ],
+          "fn": []
+        },
+        {
+          "id": "swiggy-ev-fleet",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [],
+          "fn": [
+            "yulu"
+          ]
+        },
+        {
+          "id": "instamart-pharmacy",
+          "predicted": [
+            "blinkit",
+            "zepto",
+            "flipkart",
+            "zomato"
+          ],
+          "fp": [
+            "zomato"
+          ],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "phonepe-upi-circle",
+          "predicted": [
+            "paytm",
+            "swiggy"
+          ],
+          "fp": [
+            "swiggy"
+          ],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "irctc-tatkal",
+          "predicted": [
+            "makemytrip",
+            "swiggy",
+            "zomato"
+          ],
+          "fp": [
+            "swiggy",
+            "zomato"
+          ],
+          "fn": []
+        },
+        {
+          "id": "indigo-phuket",
+          "predicted": [
+            "makemytrip"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "zomato-train-meals",
+          "predicted": [
+            "irctc"
+          ],
+          "fp": [],
+          "fn": [
+            "makemytrip",
+            "swiggy"
+          ]
+        },
+        {
+          "id": "jio-tariff",
+          "predicted": [
+            "airtel"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "rapido-airport",
+          "predicted": [
+            "ola"
+          ],
+          "fp": [],
+          "fn": []
+        },
+        {
+          "id": "ather-chargers",
+          "predicted": [
+            "bounce"
+          ],
+          "fp": [
+            "bounce"
+          ],
+          "fn": []
+        },
+        {
+          "id": "flipkart-minutes-expansion",
+          "predicted": [
+            "blinkit",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [],
+          "fn": [
+            "phonepe"
+          ]
+        },
+        {
+          "id": "blinkit-sbi-card",
+          "predicted": [
+            "zomato"
+          ],
+          "fp": [],
+          "fn": [
+            "cred"
+          ]
+        },
+        {
+          "id": "meesho-injection",
+          "predicted": [
+            "flipkart",
+            "blinkit",
+            "phonepe",
+            "swiggy",
+            "zepto"
+          ],
+          "fp": [
+            "blinkit",
+            "phonepe",
+            "swiggy",
+            "zepto"
+          ],
+          "fn": []
+        },
+        {
+          "id": "paytm-results",
+          "predicted": [
+            "phonepe",
+            "razorpay"
+          ],
+          "fp": [
+            "phonepe",
+            "razorpay"
+          ],
+          "fn": []
+        },
+        {
+          "id": "yulu-zepto-dex",
+          "predicted": [
+            "zepto"
+          ],
+          "fp": [],
+          "fn": [
+            "bounce",
+            "zomato"
+          ]
+        },
+        {
+          "id": "razorpay-reconciliation",
+          "predicted": [
+            "paytm",
+            "phonepe"
+          ],
+          "fp": [
+            "phonepe"
+          ],
+          "fn": []
+        }
+      ]
+    }
+  ]
+}
