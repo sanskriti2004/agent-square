@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-sans: var(--font-plex-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), ui-monospace, SFMono-Regular, monospace;
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-sunk: var(--sunk);
+  --color-ink: var(--ink);
+  --color-ink-2: var(--ink-2);
+  --color-muted: var(--muted);
+  --color-faint: var(--faint);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-good: var(--good);
+  --color-good-soft: var(--good-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-bad: var(--bad);
+  --color-bad-soft: var(--bad-soft);
+}
+
+:root {
+  --paper: #f6f5f1;
+  --panel: #fdfcfa;
+  --sunk: #efede7;
+  --ink: #16181b;
+  --ink-2: #2d3036;
+  --muted: #646a73;
+  --faint: #9a9ea6;
+  --line: #e3e0d8;
+  --line-strong: #cfcbc1;
+  --accent: #b9410e;
+  --accent-ink: #ffffff;
+  --accent-soft: #f7e7dc;
+  --good: #2f6b4b;
+  --good-soft: #e3efe7;
+  --warn: #8a6100;
+  --warn-soft: #f5ecd6;
+  --bad: #9f2f28;
+  --bad-soft: #f5e1df;
+  color-scheme: light;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #111214;
+    --panel: #16171a;
+    --sunk: #1c1d21;
+    --ink: #ecebe6;
+    --ink-2: #d2d0ca;
+    --muted: #9095a0;
+    --faint: #6b707a;
+    --line: #26282d;
+    --line-strong: #353840;
+    --accent: #ee8a52;
+    --accent-ink: #1a0f08;
+    --accent-soft: #2b1c13;
+    --good: #7cc29b;
+    --good-soft: #17251d;
+    --warn: #e0b660;
+    --warn-soft: #262012;
+    --bad: #ef8b84;
+    --bad-soft: #2a1716;
+    color-scheme: dark;
+  }
+}
+
+html,
+body {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+body {
+  font-feature-settings: "ss01", "tnum";
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--ink);
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
